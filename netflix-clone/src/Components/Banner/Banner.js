@@ -2,6 +2,8 @@ import React, { useEffect,useState } from 'react'
 import axios from "../../Utils/axios";
 import requests from '../../Utils/requests';
 import './banner.css'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import InfoIcon from '@mui/icons-material/Info';
 
 function Banner() {
 const [movie, setMovie] =useState({});
@@ -29,8 +31,8 @@ function truncate(str,n){
             {movie?.title ||movie?.name || movie?.original_name}
         </h1>
         <div className='banner-buttons'>
-            <button className='banner-b play '>Play</button>
-            <button className='banner-b list'>My List</button>
+            <button className='banner-b play '><PlayArrowIcon/> Play</button>
+            <button className='banner-b list'><InfoIcon/>  More Info</button>
         </div>
             <h1 className='banner-description'>
                 {truncate(movie?.overview, 100)}
