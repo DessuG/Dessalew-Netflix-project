@@ -4,7 +4,7 @@ const requests = {
     fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
     fetchTopRatedMovies: `/movie/top_rated?api_key=${API_KEY}&language=en-us`,
     fetchActionMovies: `/discover/movie?api_key=${API_KEY}&with_geners=28`,
-    fetchComedyMovies: `/discover/movie?api_key=${API_KEY}&with_geners=35`,
+    fetchComedyMovies: `/discover/movie?api_key=${API_KEY}&with_gener=35`,
     fetchHorrorMovies: `/discover/movie?api_key=${API_KEY}&with_geners=27`,
     fetchRomanceovies: `/discover/movie?api_key=${API_KEY}&with_geners=10749`,
     fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_geners=99`,
