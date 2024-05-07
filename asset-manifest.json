@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Dessalew-Netflix-project%20/static/css/main.36ded7bd.css",
+    "main.js": "/Dessalew-Netflix-project%20/static/js/main.63de403e.js",
+    "static/media/netflix-logo.jpg": "/Dessalew-Netflix-project%20/static/media/netflix-logo.acf158c1a2db1d10b771.jpg",
+    "index.html": "/Dessalew-Netflix-project%20/index.html",
+    "main.36ded7bd.css.map": "/Dessalew-Netflix-project%20/static/css/main.36ded7bd.css.map",
+    "main.63de403e.js.map": "/Dessalew-Netflix-project%20/static/js/main.63de403e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36ded7bd.css",
+    "static/js/main.63de403e.js"
+  ]
+}
