@@ -21,8 +21,14 @@ console.log("error",error);
     })()
 },[]);
 
-function truncate(str,n){
-    return str?.lenght>n ? str.substr(0, n-1)+'...':str; 
+function truncate(str, n){
+    if((str?.length)>=n){
+        return str.substring(0, n-1)+'...';
+    }
+    else{
+        return str;
+    }
+    // return (str?.lenght>n ? str.slice(0, n-1)+'...':str); 
 }
     return (
     <div className='banner' style={{backgroundSize:"cover", backgroundImage:`url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,backgroundPosition:"center",backgroundRepeat:'no-repeat'}}>
@@ -35,7 +41,7 @@ function truncate(str,n){
             <button className='banner-b list'><InfoIcon/>  More Info</button>
         </div>
             <h1 className='banner-description'>
-                {truncate(movie?.overview, 100)}
+                {truncate((movie?.overview), 150)}
             </h1>
         </div>
          <div className='banner_fadeBottom'/>
