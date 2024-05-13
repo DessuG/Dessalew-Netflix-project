@@ -11,6 +11,8 @@
     padding-left: 70px;
     padding-right: 70px;
     cursor: pointer;
+    position: fixed;
+    width: 100%;
 }
 
 .header-container img {
